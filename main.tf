@@ -17,12 +17,12 @@ data "aws_ami" "ubuntu" {
   owners = ["amazon"]
 }
 
-resource "aws_instance" "example" {
-  ami           = data.aws_ami.ubuntu.id # Amazon Linux 2 AMI
-  instance_type = "t2.micro"
+#resource "aws_instance" "example" {
+ # ami           = data.aws_ami.ubuntu.id # Amazon Linux 2 AMI
+  #instance_type = "t2.micro"
 
-  tags = {
-    Name = "ExampleInstance"
-  }
-  count = 1
-}
+  #tags = {
+   # Name = "ExampleInstance"
+  #}
+  #count = 1
+#}
